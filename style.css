@@ -1,0 +1,791 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color:black;
+    width: 100%;
+    height: 100%;
+}
+
+.full{
+
+    width: 82rem;
+    height: 270rem;
+    display: grid;
+    grid-template-rows: repeat(30,1fr); /* Adjusted for header and content */
+    grid-template-columns: repeat(2,fr) /* Single column layout */
+    background-color: orange;
+    overflow: hidden;
+    
+    
+}
+
+.head{
+
+    grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 2;
+    /* height: 20rem; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+
+   
+    /* height: 5rem; */
+   
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+    
+   font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+   
+}
+
+.logo ul{
+    display: flex;
+
+    list-style-type: none;
+    gap: 2rem;
+    
+    
+}
+
+.logo ul li a{
+    text-decoration: none;
+    color: white;
+
+
+    
+
+   
+
+}
+
+.logo ul li a:hover{
+    
+    color: #ff9928; 
+
+}
+
+#home{
+    color: #ff9928; 
+
+}
+
+
+.head .logo img{
+
+    width: 9rem;
+    height: 3rem;
+    padding-left: 2rem;
+    cursor: pointer;
+ 
+}
+
+a{
+    text-decoration: none;
+}
+
+@media(min-width:1000px){
+.symbol{
+    display: none;
+}
+
+}
+
+@media(max-width:1000px){
+    .logo ul li a {
+
+        display: none;
+        background-color: blue;
+
+    }
+
+    .head{
+
+        display: flex;
+        justify-content: space-between;
+        background-color: red;
+   
+  
+   } 
+
+
+   .head .logo img{
+
+    /* background-color: aquamarine; */
+    margin-left: 30rem;
+ 
+}
+
+.symbol{
+    /* background-color: blanchedalmond; */
+    margin-left: 2rem;
+    width: 2.7rem;
+    height: 2.7rem;
+   border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9928;
+}
+
+a{
+    color: white;
+}
+
+
+   
+
+
+
+}
+
+
+.cart{
+
+    width: 10rem;
+    height: 5rem;
+    /* background-color:  rgb(240, 184, 32);  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon{
+
+    width: 6rem;
+    height: 3rem;
+    border-radius: 25px;
+    background-color:#ff9928; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+.ic{
+    width: 2.7rem;
+    height: 2.7rem;
+   border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+}
+
+
+.price{
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+  font-size: 1rem;
+  color: black;
+  margin-right: 5px;
+}
+
+.order{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    /* color: black; */
+
+}
+
+.order a{
+    color: black;
+}
+
+
+.herosection{
+    background-image: url(first.webp);
+
+    grid-row-start: 2;
+    grid-row-end: 10;
+   
+    
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.deal{
+
+    grid-row-start: 10;
+    grid-row-end: 13;
+
+    background-color: black;
+    color: #ff9928; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+   font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 3.5rem;
+
+}
+
+
+
+.cards{
+    grid-row-start: 13;
+    grid-row-end: 20;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+
+.cards a{
+
+   
+
+    color: #ff9928; 
+    font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2rem;
+   display: flex;
+   justify-content: center;
+margin-top: 10px;
+/* background-color: red; */
+
+}
+
+
+.ho{
+    display: none;
+    /* background-color: red; */
+}
+
+
+.card1:hover,.card2:hover,.card3:hover{
+
+    .ho{
+        width: 400px;
+        height: 40px;
+    
+        
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 80px;
+    
+    }
+
+
+}
+
+
+#ban{
+
+    width: 82rem;
+    height: 13rem;
+   
+    /* margin-top: 30px; */
+}
+
+
+#orderbtn{
+
+    width: 150px;
+    height: 50px;
+    position: relative;
+    bottom: 6rem;
+    left: 68rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: bold;
+    background-color: #ff9928;
+    cursor: pointer;
+     color: white;
+    /* animation:  move 1s ease-in-out 0s infinite alternate;  */ 
+}
+
+@keyframes move{
+
+    from {
+        transform: scale(1);
+    }
+    to {
+        
+        transform: scale(1.3);
+    }
+
+}
+
+
+#orderbtn:hover{
+
+    animation:  move 1s ease-in-out 0s infinite alternate;
+   
+
+
+}
+
+.bite{
+
+   
+
+    background-color: black;
+    color: #ff9928; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+   font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 3.5rem;
+   margin-top: 10px;
+
+
+
+}
+
+
+.images{
+
+     display: flex;
+    
+     justify-content: space-around;
+
+
+    margin-top: 20px; 
+    
+}
+
+
+.im{
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.firsttwo{
+
+    display: flex;
+}
+
+.secondtwo{
+
+    display: flex;
+}
+
+
+
+
+.images a{
+
+   
+
+    color: #ff9928; 
+    font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2rem;
+   display: flex;
+   justify-content: center;
+margin-top: 10px;
+/* background-color: red; */
+
+}
+
+
+
+.hoo{
+
+    display: none;
+}
+
+#im1:hover,#im2:hover,#im3:hover,#im4:hover{
+
+    .hoo{
+        width: 300px;
+        height: 40px;
+    
+        
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 80px;
+    
+    }
+
+
+
+
+}
+
+
+@media(max-width:1000px){
+
+
+
+
+    
+
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+        
+    
+    }
+
+    .firsttwo{
+        display: flex;
+        justify-content: space-around;
+        width: 82rem;
+        
+    }
+
+
+    .secondtwo{
+        display: flex;
+        justify-content: space-around;
+        width: 82rem;
+      
+    }
+
+
+
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.in{
+
+    width: 40rem;
+    height: 620px;
+    background-color: #2e2e2e;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.headi{
+
+
+    color: #ff9928; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+   font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 3.5rem;
+   margin-top: 50px;
+
+
+}
+
+.pa{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a7a7a;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+
+#name{
+
+    width: 37rem;
+    height: 3rem;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+     padding-left: 10px;
+      
+            
+}
+
+
+#email,#phon{
+
+
+    width: 18.3rem;
+    height: 3rem;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+
+
+}
+
+
+#message{
+
+    width: 37rem;
+    height: 6rem;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 50px;
+
+
+}
+
+#robot{
+
+    width: 17rem;
+    height: 5rem;
+    background-color: black;
+    margin-top: 20px;
+    margin-right: 310px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#check{
+
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    border: none;
+    
+}
+
+#checkpara{
+
+    font-size: 1.3rem;
+    margin-left: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+
+#btn{
+
+
+    width: 17rem;
+    height: 3rem;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #661111;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #ff9928;
+}
+
+::placeholder{
+
+    padding-left: 10px;
+    font-size: 1rem;
+    color: white;
+    
+}
+
+
+.social{
+
+    height: 400px;
+    background-color: #ff9928;
+    margin-top: 30px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    text-decoration: underline;
+    
+}
+
+.social h1{
+    text-align: center;
+}
+
+.foott{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.foot{
+
+    width: 65rem;
+    height: 600px;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+   
+    
+}
+
+.foot p{
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    color: white;
+}
+
+
+.list{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.list ul a{
+
+    color: white;
+    
+    font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1.1rem;
+   margin: 15px;
+}
+
+
+.list ul a:hover{
+
+    color: #ff9928;
+
+}
+
+#listhome:hover{
+
+    color:white;
+
+}
+
+
+
+.faceicon{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 30px;
+}
+
+.facebook{
+
+    width: 50px;
+    height: 50px;
+    background-color: #ff9928;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.instagram{
+
+    width: 50px;
+    height: 50px;
+    background-color: #ff9928;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.instagram:hover,.facebook:hover{
+
+    background-color: #661111;
+}
+
+
+.copy{
+
+    font-size: 1,2rem;
+    font-weight: 500;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
