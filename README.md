@@ -6,3 +6,4 @@ This can be submitted as project.
 we have also used some basic concepts of javascript to make this clone.
 You can submit this as project.
 This is full responsive website.
+This is portable.
