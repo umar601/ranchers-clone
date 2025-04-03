@@ -8,4 +8,4 @@ You can submit this as project.
 This is full responsive website.
 This is portable.
 You can take it as guide to make further projects.
-This is inspired by ranchers website
+This is inspired by ranchers.
